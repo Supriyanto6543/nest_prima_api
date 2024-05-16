@@ -19,3 +19,10 @@ model tasks {
   task_description String @db.Text
   created_at DateTime @default(now())
 }
+
+model comment {
+  id_comment Int @id @default(autoincrement())
+  comment_title String
+  comment_description String @db.Text
+  created_at DateTime @default(now())
+}
